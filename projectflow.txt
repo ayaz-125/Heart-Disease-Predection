@@ -1,0 +1,10 @@
+-------------------------Setting up project structure---------------------------
+
+1. Create repo, clone it in local
+2. Create a virtual environment named 'heart' - conda create -n heart python=3.10 -y
+3. Activate the virtual environment - 
+4. pip install cookiecutter
+5. cookiecutter -c v1 https://github.com/drivendata/cookiecutter-data-science
+6. Rename src.models -> src.model
+7. Add the "data" folder to the .gitignore file before pushing it to GitHub.
+7. git add - commit - push
