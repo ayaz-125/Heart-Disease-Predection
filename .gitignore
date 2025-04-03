@@ -172,7 +172,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-data/
+data/external/
+data/interim/
+data/processed/
+data/raw/
 cred.txt
 dvc.lock
 notebooks/exp-1.ipyn
