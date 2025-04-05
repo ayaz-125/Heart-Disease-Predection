@@ -177,5 +177,5 @@ data/interim/
 data/processed/
 data/raw/
 cred.txt
-dvc.lock
+# dvc.lock
 notebooks/exp-1.ipyn

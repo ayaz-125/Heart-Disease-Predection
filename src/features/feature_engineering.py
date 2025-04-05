@@ -54,7 +54,9 @@ def scale_features(train_df: pd.DataFrame, test_df: pd.DataFrame, columns_to_sca
     - scaler (StandardScaler): Fitted scaler for later use
     """
     scaler = StandardScaler()
+    
     train_df[columns_to_scale] = scaler.fit_transform(train_df[columns_to_scale])  # Fit on train, transform train
+
     test_df[columns_to_scale] = scaler.transform(test_df[columns_to_scale])  # Transform test using same scaler
 
     return train_df, test_df, scaler
