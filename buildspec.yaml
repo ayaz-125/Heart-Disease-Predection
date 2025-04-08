@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Build phase started...
       - zip -r artifact.zip appspec.yml flask_app/** scripts/**
-      - aws s3 cp artifact.zip s3://demo-zero-hero3/artifact.zip
+      - aws s3 cp artifact.zip s3://heartbucket24/artifact.zip
 
 artifacts:
   files:
