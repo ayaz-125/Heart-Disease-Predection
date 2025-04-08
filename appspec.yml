@@ -1,0 +1,17 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /flask_app
+    destination: /home/ubuntu/flask_app
+
+hooks:
+  BeforeInstall:
+    - location: scripts/stop.sh
+      timeout: 300
+      runas: ubuntu
+
+  AfterInstall:
+    - location: scripts/start.sh
+      timeout: 300
+      runas: ubuntu
