@@ -1,0 +1,18 @@
+feature_engineering:  #There are the parameter for the feature engineering file
+  columns_to_scale:  # List of numerical columns that need scaling
+    - Age
+    - Sex
+    - Blood Pressure
+    - Cholesterol
+    - Sugre Blood Value
+    - EKG results
+    - Max heart rate
+    - Exercise angina
+    - Segment Depression
+    - Slope of ST
+    - Number of vessels fluro
+    - Thallium
+  scaling_strategy: "StandardScaler"  # Can be changed later if needed (e.g., MinMaxScaler)
+
+data_ingestion:  # These are the parameter for the data ingestion file 
+  test_size : 0.25
